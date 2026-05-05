@@ -6,13 +6,24 @@
 #include <string>
 
 #include "BasicShape.h"
-#include <Circle.h>
-
+#include "Circle.h"
+#include "Rectangle.h"
+#include "Square.h"
 
 using namespace std;
 
 int main()
 {
+	cout << "/////***CONSTRCUTOR TEST***/////" << endl;
+	
+	Rectangle r1(5, 6, "Rect1");
+	Rectangle r2(11, 9, "Rect2");
+
+	r1.calcArea();
+
+	cout << r1.getArea() << endl;
+
+
 
 }
 
