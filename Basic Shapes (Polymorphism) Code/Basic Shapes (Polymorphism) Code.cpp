@@ -1,4 +1,4 @@
-// Basic Shapes (Polymorphism) Code.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Basic Shape, s (Polymorphism) Code.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -12,6 +12,9 @@
 
 using namespace std;
 
+//void PrintShape()
+
+
 int main()
 {
 	cout << "/////***CONSTRCUTOR TEST***/////" << endl;
@@ -19,9 +22,19 @@ int main()
 	Rectangle r1(5, 6, "Rect1");
 	Rectangle r2(11, 9, "Rect2");
 
-	r1.calcArea();
+	Circle c1(5, 4, 3, "Circ1");
+	Circle c2(9, 8, 7, "Circ2");
 
-	cout << r1.getArea() << endl;
+	Square s1(4, "Sqaure1");
+
+
+	cout << r1.getName() << " Area: " << r1.getArea() << endl;
+	cout << r2.getName() << " Area: " << r2.getArea() << endl;
+
+	cout << c1.getName() << " Area: " << c1.getArea() << endl;
+	cout << c2.getName() << " Area: " << c2.getArea() << endl;
+
+	cout << s1.getName() << " Area: " << s1.getArea() << endl;
 
 
 

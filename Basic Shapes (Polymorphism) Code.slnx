@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Basic Shapes (Polymorphism) Code/Basic Shapes (Polymorphism) Code.vcxproj" />
+  <Project Path="Basic Shapes (Polymorphism) Code/Basic Shapes (Polymorphism) Code.vcxproj" Id="463af145-42e2-4b44-ba08-c755d963f422" />
 </Solution>
