@@ -23,9 +23,15 @@ public:
 	void setArea();
 
 	//Getters
-	string getName() const;
+	string getName() const
+	{
+		return name;
+	}
 
-	double getArea() const;
+	double getArea() const
+	{
+		return area;
+	}
 
 	virtual void calcArea() = 0;
 
