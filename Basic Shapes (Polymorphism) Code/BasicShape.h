@@ -18,9 +18,9 @@ public:
 	~BasicShape();
 
 	// Setters
-	void setName();
+	void setName(string name);
 
-	void setArea();
+	void setArea(double area);
 
 	//Getters
 	string getName() const
@@ -37,3 +37,4 @@ public:
 
 };
 
+#endif
