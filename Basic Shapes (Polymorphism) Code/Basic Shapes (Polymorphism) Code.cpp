@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <iomanip>
 #include <numbers>
 #include <string>
 
@@ -28,14 +29,20 @@ int main()
 	Square s1(4, "Sqaure1");
 
 
-	cout << r1.getName() << " Area: " << r1.getArea() << endl;
-	cout << r2.getName() << " Area: " << r2.getArea() << endl;
+	cout << r1.getName() << " Area: " << setprecision(4) << r1.getArea() << endl;
+	cout << r2.getName() << " Area: " << setprecision(4) << r2.getArea() << endl;
 
-	cout << c1.getName() << " Area: " << c1.getArea() << endl;
-	cout << c2.getName() << " Area: " << c2.getArea() << endl;
+	cout << c1.getName() << " Area: " << setprecision(4) << c1.getArea() << endl;
+	cout << c2.getName() << " Area: " << setprecision(4) << c2.getArea() << endl;
 
-	cout << s1.getName() << " Area: " << s1.getArea() << endl;
+	cout << s1.getName() << " Area: " << setprecision(4) << s1.getArea() << endl;
 
+	
+	cout << "/////***POLYMORPHISM TEST***/////" << endl;
+
+	const int shape_num = 5;
+
+	BasicShape* ShArr[shape_num];
 
 
 }
