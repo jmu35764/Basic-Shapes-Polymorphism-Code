@@ -13,9 +13,9 @@ private:
 
 public:
 
-	BasicShape();
+	//BasicShape();
 
-	~BasicShape();
+	//~BasicShape();
 
 	// Setters
 	void setName(string name);
