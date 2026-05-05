@@ -14,9 +14,11 @@ void Rectangle::calcArea()
 void Rectangle::setLength(double l)
 {
 	length = l;
+	calcArea();
 }
 
 void Rectangle::setWidth(double w)
 {
 	width = w;
+	calcArea();
 }

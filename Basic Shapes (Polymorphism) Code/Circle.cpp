@@ -20,6 +20,7 @@ void Circle::calcArea()
 void Circle::setxCenter(double x)
 {
 	xCenter = x;
+	//calcArea();
 }
 
 void Circle::setyCenter(double y)
@@ -30,4 +31,5 @@ void Circle::setyCenter(double y)
 void Circle::setRadius(double r)
 {
 	radius = r;
+	calcArea();
 }
