@@ -14,6 +14,9 @@ private:
 public:
 	Circle(double x, double y, double r, string n = "Cirle");
 
+	//Overrided Area Calculation
+	void calcArea() override;
+	
 	//Setters
 	void setxCenter(double x);
 

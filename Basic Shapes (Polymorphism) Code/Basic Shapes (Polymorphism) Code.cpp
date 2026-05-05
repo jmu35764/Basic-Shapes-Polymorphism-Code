@@ -2,10 +2,13 @@
 //
 
 #include <iostream>
+#include <numbers>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    const double pi = numbers::pi;
+    std::cout << pi;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
