@@ -1,4 +1,7 @@
 #include "Rectangle.h"
+#include <iostream>
+
+using namespace std;
 
 Rectangle::Rectangle(double l, double w, string n) : length(l), width(w)
 {
@@ -8,6 +11,7 @@ Rectangle::Rectangle(double l, double w, string n) : length(l), width(w)
 
 void Rectangle::calcArea()
 {
+	//cout << "Rectangle Area Calculation" << endl;
 	setArea(length * width);
 }
 

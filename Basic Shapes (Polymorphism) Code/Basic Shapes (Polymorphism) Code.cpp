@@ -42,8 +42,45 @@ int main()
 
 	const int shape_num = 5;
 
-	BasicShape* ShArr[shape_num];
+	BasicShape* ShArr[shape_num] = { &r1, &r2, &c1, &c2, &s1 };
 
+
+	for (int i = 0; i < shape_num; i++)
+	{
+		cout << ShArr[i]->getName() << " Area: " << setprecision(4) << ShArr[i]->getArea() << endl;
+	}
+
+	cout << "/////***SETTER TEST***/////" << endl;
+
+	cout << "CIRCLE TEST" << endl;
+
+	c1.setRadius(5);
+	cout << "New Radius: " << c1.getRadius() << endl << "New Area: " << c1.getArea() << endl;
+
+	c1.setxCenter(6);
+	c1.setyCenter(6);
+
+	cout << "New X Center: " << c1.getxCenter() << endl << "New Y Center: " << c1.getyCenter() << endl;
+
+	cout << c1.getName() << " " << "Area: " << c1.getArea() << endl << endl;
+
+	
+	cout << "RECTANGLE TEST" << endl;
+	
+	r1.setLength(6);
+
+	cout << r1.getName() << " " << "New Length: " << r1.getLength() << "Area: " << r1.getArea() << endl;
+
+	r1.setWidth(7);
+
+	cout << r1.getName() << " " << "New Width: " << r1.getWidth() << "Area: " << r1.getArea() << endl << endl;
+
+
+	cout << "SQUARE TEST" << endl;
+
+	s1.setSide(8);
+
+	cout << s1.getName() << " " << "New Side: " << s1.getSide() << "Area: " << s1.getArea() << endl;
 
 }
 

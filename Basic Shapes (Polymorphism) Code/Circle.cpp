@@ -1,5 +1,6 @@
 #include "Circle.h"
 #include <numbers>
+#include <iostream>
 
 using namespace std;
 
@@ -13,6 +14,7 @@ Circle::Circle(double x, double y, double r, string n)
 
 void Circle::calcArea()
 {
+	//cout << "Circle Area Calculation" << endl;
 	const double pi = numbers::pi;
 	setArea(radius * radius * pi);
 }
